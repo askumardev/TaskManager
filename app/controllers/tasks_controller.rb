@@ -15,7 +15,7 @@ class TasksController < ApplicationController
     todo_tasks = Task.where(status: "To Do").count
 
     if task_params[:status] == "To Do" && Task.todo_tasks(total_tasks, todo_tasks)
-      render json: { error: 'Cannot create new "To Do"' }, status: :unprocessable_entity
+      render json: { error: "Cannot create new task" }, status: :unprocessable_entity
     else
       @task = Task.new(task_params)
       if @task.save
