@@ -5,7 +5,7 @@ class Task < ApplicationRecord
   after_initialize :set_default_status, if: :new_record?
 
   def self.todo_tasks(total_tasks, todo_tasks)
-    todo_tasks <= (total_tasks / 2.0).ceil ? true : false
+    todo_tasks >= (total_tasks / 2.0).ceil ? true : false
   end
 
   private
