@@ -1,5 +1,20 @@
 # README
 
+## Below are the instructions to run the application
+### Rails app:
+* git clone https://github.com/askumardev/TaskManager.git 
+* cd TaskManager
+* bundle install
+* rails db:create 
+* rails db:migrate
+* rails db:seed
+* rails server
+
+## React App:
+* Open another terminal
+* cd task_manager
+* npm start
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
