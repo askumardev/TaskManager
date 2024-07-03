@@ -15,6 +15,9 @@
 * cd task_manager
 * npm start
 
+## to access the application
+* after the react server is on go to http://localhost:4000/ to view the content
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
