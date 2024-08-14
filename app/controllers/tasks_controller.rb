@@ -6,6 +6,7 @@ class TasksController < ApplicationController
       @tasks = Task.where(status: params[:status])
     else
       @tasks = Task.all
+      #@tasks = Task.take(3)
     end
     render json: @tasks
   end
